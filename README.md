@@ -1,46 +1,52 @@
-# Getting Started with Create React App
+# Formulário de inscrição
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![GitHub repo size](https://img.shields.io/github/repo-size/EduardaMatias/formulario-inscricao?style=for-the-badge)
+![GitHub language count](https://img.shields.io/github/languages/count/EduardaMatias/formulario-inscricao?style=for-the-badge)
+![GitHub forks](https://img.shields.io/github/forks/EduardaMatias/formulario-inscricao?style=for-the-badge)
 
-## Available Scripts
+<img src="../../Pictures/form-react/public/preview.png" alt="Preview">
 
-In the project directory, you can run:
+> Site de inscrição que dispara envio de mensagem pro endereço de email do usuário
 
-### `npm start`
+<br>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### Tecnologias e bibliotecas utilizadas
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- [x] React.js
+- [x] Typescript
+- [x] EmailJS
+- [x] React-toastify
+- [x] Styled Components
 
-### `npm test`
+<br>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 💻 Pré-requisitos
 
-### `npm run build`
+Antes de começar, verifique se você atendeu aos seguintes requisitos:
+<!---Estes são apenas requisitos de exemplo. Adicionar, duplicar ou remover conforme necessário--->
+* Você instalou a versão mais recente de `<node / npm>`
+* Você tem uma máquina `<Windows / Linux / Mac>`.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<br>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## ☕ Clonando o projeto
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Para clonar o Formulário de inscrição, siga estas etapas, utilize o terminal de sua preferência:
 
-### `npm run eject`
+```
+git clone https://github.com/EduardaMatias/formulario-inscricao.git
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+~ caminhe até a pasta onde o projeto foi clonado
+```
+npm i
+```
+~ aguarde enquanto ocorre a instalação, esse passo pode demorar alguns instantes
+```
+npm start
+```
+~ abra [http://localhost:3000](http://localhost:3000) para visualizar em seu navegador
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+[⬆ Voltar ao topo](#formulário-de-inscrição)<br>
