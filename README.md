@@ -47,6 +47,10 @@ npm start
 ```
 ~ abra [http://localhost:3000](http://localhost:3000) para visualizar em seu navegador
 
----
+<br>
+
+> ⌨️ com ❤️ por [Eduarda Matias](https://www.linkedin.com/in/eduarda-matias/) 😊
+
+<br>
 
 [⬆ Voltar ao topo](#formulário-de-inscrição)<br>
