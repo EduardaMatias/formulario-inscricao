@@ -11,21 +11,17 @@ function Formulario() {
 
   function handleSubmit() {
     const regex = /^[a-z0-9.]+@[a-z0-9]+.[a-z]+.([a-z]+)?$/;
+
     if (
       fieldValues.nome.length <= 3 ||
       fieldValues.email == "" ||
       !regex.test(fieldValues.email)
     ) {
       toast.error("Preencha todos os campos", {
-        position: "top-right",
+        position: toast.POSITION.TOP_RIGHT,
+        theme: "dark",
         autoClose: 3000,
-        hideProgressBar: false,
-        closeOnClick: true,
-        pauseOnHover: true,
-        draggable: true,
-        progress: undefined,
-        theme: "light",
-        });
+      });
     } else {
       const templateParams = {
         to_name: fieldValues.nome,
@@ -42,12 +38,10 @@ function Formulario() {
           toast.success("Inscrição feita! Confira seu email", {
             position: toast.POSITION.TOP_RIGHT,
             theme: "dark",
+            autoClose: 3000,
           });
+          setFieldValues({ nome: "", email: "" });
         });
-
-      setTimeout(() => {
-        window.location.reload();
-      }, 5200);
     }
   }
   return (
@@ -71,6 +65,7 @@ function Formulario() {
             handleOnChange={(e: any) =>
               setFieldValues({ ...fieldValues, nome: e.target.value })
             }
+            value={fieldValues.nome}
           />
           <Input
             placeholder="Email"
@@ -78,6 +73,7 @@ function Formulario() {
             handleOnChange={(e: any) =>
               setFieldValues({ ...fieldValues, email: e.target.value })
             }
+            value={fieldValues.email}
           />
         </S.WrapperInputs>
         <S.WrapperButtons>
