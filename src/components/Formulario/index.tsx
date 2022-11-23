@@ -10,7 +10,7 @@ function Formulario() {
   const [fieldValues, setFieldValues] = useState({ nome: "", email: "" });
 
   function handleSubmit() {
-    const regex = /^[a-z0-9.]+@[a-z0-9]+.[a-z]+.([a-z]+)?$/;
+    const regex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 
     if (
       fieldValues.nome.length <= 3 ||
