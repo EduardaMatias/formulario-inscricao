@@ -10,6 +10,9 @@ export const Button = styled.button`
   font-size: 16px;
   cursor: pointer;
   transition: 1s;
+  width: 100px;
+  display: flex;
+  justify-content: center;
 
   :hover {
     opacity: 0.7;

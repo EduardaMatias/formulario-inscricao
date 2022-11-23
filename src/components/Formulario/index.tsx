@@ -5,13 +5,15 @@ import { useState } from "react";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import emailjs from "@emailjs/browser";
+import "@fortawesome/fontawesome-svg-core";
+import Loading from "../Loading";
 
 function Formulario() {
   const [fieldValues, setFieldValues] = useState({ nome: "", email: "" });
+  const [loading, setLoading] = useState(false);
 
   function handleSubmit() {
     const regex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-
     if (
       fieldValues.nome.length <= 3 ||
       fieldValues.email == "" ||
@@ -23,6 +25,7 @@ function Formulario() {
         autoClose: 3000,
       });
     } else {
+      setLoading(true);
       const templateParams = {
         to_name: fieldValues.nome,
         to_email: fieldValues.email,
@@ -41,6 +44,7 @@ function Formulario() {
             autoClose: 3000,
           });
           setFieldValues({ nome: "", email: "" });
+          setLoading(false);
         });
     }
   }
@@ -77,7 +81,14 @@ function Formulario() {
           />
         </S.WrapperInputs>
         <S.WrapperButtons>
-          <Button handleOnClick={() => handleSubmit()}>Enviar</Button>
+          <Button
+            handleOnClick={() => {
+              handleSubmit();
+            }}
+            isLoading={loading}
+          >
+            <>{loading == true ? <Loading /> : "Enviar"}</>
+          </Button>
         </S.WrapperButtons>
       </S.Container>
     </S.Wrapper>
