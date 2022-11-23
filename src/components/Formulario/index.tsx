@@ -47,7 +47,7 @@ function Formulario() {
 
       setTimeout(() => {
         window.location.reload();
-      }, 5000);
+      }, 5200);
     }
   }
   return (
