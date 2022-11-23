@@ -4,7 +4,7 @@
 ![GitHub language count](https://img.shields.io/github/languages/count/EduardaMatias/formulario-inscricao?style=for-the-badge)
 ![GitHub forks](https://img.shields.io/github/forks/EduardaMatias/formulario-inscricao?style=for-the-badge)
 
-<img src="../../Pictures/form-react/public/preview.png" alt="Preview">
+<img src="public/preview.png">
 
 > Site de inscrição que dispara envio de mensagem pro endereço de email do usuário
 
